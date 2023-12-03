@@ -59,7 +59,6 @@ export class WebSocketComponent implements OnInit {
           Token: JSON.parse(token),
           msgtype: 189,
         };
-        // this.jsonToBson(message);
         console.log('Sending message:', message);
         this.socket.send(message);
         console.log('Sent message:', message);
@@ -71,15 +70,5 @@ export class WebSocketComponent implements OnInit {
     }
   }
 
-  // jsonToBson(json: string) {
-  //   const jsonData = {
-  //     name: 'John Doe',
-  //     age: 30,
-  //     occupation: 'Software Engineer',
-  //   };
 
-  //   const bsonData = BSON.serialize(jsonData);
-
-  //   console.log(bsonData);
-  // }
 }

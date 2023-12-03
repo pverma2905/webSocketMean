@@ -1,4 +1,7 @@
 const axios = require("axios");
+const fs = require("fs");
+const BSON = require("bson");
+// import { BSON, EJSON, ObjectId } from 'bson';
 exports.generateToken = async (req, res) => {
     try{  
         const postData= req.body 
@@ -19,5 +22,6 @@ exports.generateToken = async (req, res) => {
         })
     }
 }
+
 
       
